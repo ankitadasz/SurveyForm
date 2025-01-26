@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,8 +23,40 @@
          <br>
         <input type="email" name="mail" id="form" placeholder="Enter Your mail" required>
 
-         <label for="age" class="name">Age</label>
+         <label for="age" class="name">Age</label><br>
+
         <input type="number" name="age" id="form" placeholder="Enter your age" required>
+
+
+        <label for="role" class="name">Choose A Role That Best Describes You</label><br>
+
+            <select name="role" id="role">
+                <option selected disabled value>Choose Your Role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="pjob">Part Time Job</option>
+                <option value="No">Prefer Not To Say</option>
+                <option value="other">Other</option>
+            </select>
+              
+            <label for="recom" class="name">Would You Recommend Our Product To A Friend?</label>
+            <div class="recommend-options">
+                <label>
+                    <input type="radio" name="recommend" value="Never" required> Never
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="Maybe"> Maybe
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="Likely"> Likely
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="Definitely"> Definitely
+                </label>
+            </div>
+            
+            
+      </div>
         </div>
 
 
