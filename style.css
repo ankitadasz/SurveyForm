@@ -130,11 +130,11 @@ body {
   }
   .remark textarea {
     
-        width: 500px; /* Adjust width to match your requirement */
-        height: 150px; /* Adjust height to match your requirement */
-        padding: 10px; /* Add padding for better spacing inside the text area */
-        border: 2px solid #ccc; /* Add a light border */
-        border-radius: 5px; /* Rounded corners */
+        width: 500px; 
+        height: 150px; 
+        padding: 10px; 
+        border: 2px solid #ccc; 
+        border-radius: 5px; 
         
       }
 
@@ -160,6 +160,38 @@ body {
 img{
     mix-blend-mode: multiply;
 }
-
+@media (max-width: 768px) {
+    .box {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    .submit {
+      height: 45px;
+      width: fit-content;
+    }
+    textarea {
+        height: 20px;
+        width: 70px;
+      }
+  }
+  
+  @media (max-width: 481px) {
+    .box {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .submit {
+      font-size: 1rem;
+      height: 40px;
+      width: fit-content;
+    }
+  
+    textarea {
+      height: 20px;
+      width: 280px;
+    }
+  }
 
 
