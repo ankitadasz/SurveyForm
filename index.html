@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,89 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-    
     <div class="box">
-        <h1>SURVEY FORM</h1>
-        <h2><i> Thank You For Taking Your Time To Give Us FeedBack</i></h2>
-      
-        <div class="label">
-                     <label for="name" class="name">Name</label>
-         
-         <input type="text" name="name" id="form" placeholder="Enter Your Name" required>
-
-
-         <label for="mail" class="name">E-Mail</label>
-      
-        <input type="email" name="mail" id="form" placeholder="Enter Your mail" required>
-
-         <label for="age" class="name">Age</label>
-
-        <input type="number" name="age" id="form" placeholder="Enter your age" required>
-
-
-        <label for="role" class="name">Choose A Role That Best Describes You</label>
-
-            <select name="role" id="role">
-                <option selected disabled value>Choose Your Role</option>
-                <option value="student">Student</option>
-                <option value="job">Full Time Job</option>
-                <option value="pjob">Part Time Job</option>
-                <option value="No">Prefer Not To Say</option>
-                <option value="other">Other</option>
-            </select>
-              
-            <label for="recom" class="name">Would You Recommend Our Product To A Friend?</label>
-            <div class="recommend-options">
-                <label>
-                    <input type="radio" name="recommend" value="Never" required> Never
-                </label>
-                <label>
-                    <input type="radio" name="recommend" value="Maybe"> Maybe
-                </label>
-                <label>
-                    <input type="radio" name="recommend" value="Likely"> Likely
-                </label>
-                <label>
-                    <input type="radio" name="recommend" value="Definitely"> Definitely
-                </label>
-          </div>
-         
-
-          <div class="like">
-            <label for="" class="name">Select Things That You Liked About Our Product!</label>
-            <label>
-              <input type="checkbox" id="ui" />
-              <span>UI</span>
-            </label>
-            <label>
-              <input type="checkbox" id="features" />
-              <span>Features</span>
-            </label>
-            <label>
-              <input type="checkbox" id="service" />
-              <span>Service</span>
-            </label>
-            <label>
-              <input type="checkbox" id="simpleness" />
-              <span>Simpleness</span>
-            </label>
-          </div>
-
-          <div class="remark">
-            <label for="remark" class="name">Remarks</label>
-            <textarea placeholder="Write your remarks here..."></textarea>
-
-          </div>
-          
-           
-            
-            
-      </div>
+        <!-- Logo and Name Section -->
+        <div class="header">
+            <h1>SURVEY FORM</h1>
         </div>
+        <h2><i>Thank You For Taking Your Time To Give Us Feedback</i></h2>
 
+        <!-- Form starts here -->
+        <form id="survey-form" method="post" action="#">
+            <div class="label">
+                <label for="name" class="name">Name</label>
+                <input type="text" name="name" id="form" placeholder="Enter Your Name" required>
 
+                <label for="mail" class="name">E-Mail</label>
+                <input type="email" name="mail" id="form" placeholder="Enter Your Mail" required>
+
+                <label for="age" class="name">Age</label>
+                <input type="number" name="age" id="form" placeholder="Enter Your Age" required>
+
+                <label for="role" class="name">Choose A Role That Best Describes You</label>
+                <select name="role" id="role" required>
+                    <option selected disabled value>Choose Your Role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full-Time Job</option>
+                    <option value="pjob">Part-Time Job</option>
+                    <option value="No">Prefer Not To Say</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="recom" class="name">Would You Recommend Our Product To A Friend?</label>
+                <div class="recommend-options">
+                    <label>
+                        <input type="radio" name="recommend" value="Never" required> Never
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="Maybe"> Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="Likely"> Likely
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="Definitely"> Definitely
+                    </label>
+                </div>
+
+                <div class="like">
+                    <label for="" class="name">Select Things That You Liked About Our Product!</label>
+                    <label>
+                        <input type="checkbox" id="ui" name="like[]" value="UI">
+                        <span>UI</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="features" name="like[]" value="Features">
+                        <span>Features</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="service" name="like[]" value="Service">
+                        <span>Service</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="simpleness" name="like[]" value="Simpleness">
+                        <span>Simpleness</span>
+                    </label>
+                </div>
+
+                <div class="remark">
+                    <label for="remark" class="name">Remarks</label>
+                    <textarea name="remark" placeholder="Write your remarks here..." required></textarea>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="submit">SUBMIT</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>

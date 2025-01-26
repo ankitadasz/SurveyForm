@@ -137,9 +137,29 @@ body {
         border-radius: 5px; /* Rounded corners */
         
       }
-      
-      
 
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+ .submit {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: larger;
+    width: 515px; 
+    height: 50px; 
+    background-color: #000000;
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+}
+img{
+    mix-blend-mode: multiply;
+}
 
 
 
